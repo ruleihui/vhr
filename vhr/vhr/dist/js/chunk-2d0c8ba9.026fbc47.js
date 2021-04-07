@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c8ba9"],{"55b5":function(e,n,t){"use strict";t.r(n);var c=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[e._v(" 人事记录统计 ")])},a=[],r={name:"StaRecord"},u=r,o=t("2877"),s=Object(o["a"])(u,c,a,!1,null,"26bff973",null);n["default"]=s.exports}}]);
+//# sourceMappingURL=chunk-2d0c8ba9.026fbc47.js.map

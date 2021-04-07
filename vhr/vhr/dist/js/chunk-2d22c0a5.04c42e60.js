@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d22c0a5"],{f214:function(n,e,t){"use strict";t.r(e);var a=function(){var n=this,e=n.$createElement,t=n._self._c||e;return t("div",[n._v(" 员工培训 ")])},c=[],r={name:"PerTrain"},u=r,d=t("2877"),i=Object(d["a"])(u,a,c,!1,null,"412d8d4d",null);e["default"]=i.exports}}]);
+//# sourceMappingURL=chunk-2d22c0a5.04c42e60.js.map

@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d22d452"],{f77b:function(e,n,a){"use strict";a.r(n);var t=function(){var e=this,n=e.$createElement,a=e._self._c||n;return a("div",[e._v(" 工资表查询 ")])},c=[],r={name:"SalSearch"},u=r,l=a("2877"),s=Object(l["a"])(u,t,c,!1,null,"61adbb2f",null);n["default"]=s.exports}}]);
+//# sourceMappingURL=chunk-2d22d452.e21dfb8e.js.map

@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d20eff5"],{b26e:function(e,n,t){"use strict";t.r(n);var c=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div",[e._v(" 系统管理 ")])},s=[],u={name:"SysCfg"},a=u,r=t("2877"),f=Object(r["a"])(a,c,s,!1,null,"5656e206",null);n["default"]=f.exports}}]);
+//# sourceMappingURL=chunk-2d20eff5.c42b8bdf.js.map
