@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--    ol(order-list)-->
+    <ol>
+        <todo-item v-for="item in groceryList"
+                   v-key="item.id"
+                   v-bind:todo="item"/>
+    </ol>
+</div>
+</body>
+<script>
+    Vue.component('todo-item', {
+        props: ['todo'],
+        template: '<li>{{todo.text}}</li>'
+    })
+    new Vue({
+        //元素选择器
+        el: '#app',
+        data: {
+            groceryList: [
+                {id: 1, text: '百事'},
+                {id: 2, text: '雪碧'},
+                {id: 3, text: '可口'},
+            ]
+        }
+
+    })
+</script>
+</html>

@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.EmployeeDao">
+
+    <resultMap id="BaseResultMap" type="com.example.entity.Employee">
+        <!--@Table employee-->
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="gender" column="gender" jdbcType="VARCHAR"/>
+        <result property="birthday" column="birthday" jdbcType="TIMESTAMP"/>
+        <result property="idCard" column="idCard" jdbcType="VARCHAR"/>
+        <result property="wedlock" column="wedlock" jdbcType="OTHER"/>
+        <result property="nationId" column="nationId" jdbcType="INTEGER"/>
+        <result property="nativePlace" column="nativePlace" jdbcType="VARCHAR"/>
+        <result property="politicId" column="politicId" jdbcType="INTEGER"/>
+        <result property="email" column="email" jdbcType="VARCHAR"/>
+        <result property="phone" column="phone" jdbcType="VARCHAR"/>
+        <result property="address" column="address" jdbcType="VARCHAR"/>
+        <result property="departmentId" column="departmentId" jdbcType="INTEGER"/>
+        <result property="jobLevelId" column="jobLevelId" jdbcType="INTEGER"/>
+        <result property="posId" column="posId" jdbcType="INTEGER"/>
+        <result property="engageForm" column="engageForm" jdbcType="VARCHAR"/>
+        <result property="tiptopDegree" column="tiptopDegree" jdbcType="OTHER"/>
+        <result property="specialty" column="specialty" jdbcType="VARCHAR"/>
+        <result property="school" column="school" jdbcType="VARCHAR"/>
+        <result property="beginDate" column="beginDate" jdbcType="TIMESTAMP"/>
+        <result property="workState" column="workState" jdbcType="OTHER"/>
+        <result property="workId" column="workId" jdbcType="VARCHAR"/>
+        <result property="contractTerm" column="contractTerm" jdbcType="OTHER"/>
+        <result property="conversionTime" column="conversionTime" jdbcType="TIMESTAMP"/>
+        <result property="notWorkDate" column="notWorkDate" jdbcType="TIMESTAMP"/>
+        <result property="beginContract" column="beginContract" jdbcType="TIMESTAMP"/>
+        <result property="endContract" column="endContract" jdbcType="TIMESTAMP"/>
+        <result property="workAge" column="workAge" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <resultMap id="AllEmployeeInfo" type="com.example.entity.Employee" extends="BaseResultMap">
+        <association property="nation" javaType="com.example.entity.Nation">
+            <result property="name" column="nName"></result>
+        </association>
+        <association property="politicsStatus" javaType="com.example.entity.PoliticsStatus">
+            <result property="name" column="pName"></result>
+        </association>
+        <association property="department" javaType="com.example.entity.Department">
+            <result property="name" column="dName"></result>
+        </association>
+        <association property="jobLevel" javaType="com.example.entity.JobLevel">
+            <result property="name" column="jName"></result>
+            <result property="titleLevel" column="jTitleLevel"></result>
+        </association>
+        <association property="position" javaType="com.example.entity.Position">
+            <result property="name" column="posName"></result>
+        </association>
+    </resultMap>
+    <resultMap id="departAndSalary" type="com.example.entity.Employee" extends="BaseResultMap">
+        <association property="department" javaType="com.example.entity.Department">
+            <result property="name" column="dName"></result>
+        </association>
+        <association property="salary" javaType="com.example.entity.Salary">
+            <result property="id" column="sId" jdbcType="INTEGER"/>
+            <result property="basicSalary" column="sBasicSalary" jdbcType="INTEGER"/>
+            <result property="bonus" column="sBonus" jdbcType="INTEGER"/>
+            <result property="lunchSalary" column="sLunchSalary" jdbcType="INTEGER"/>
+            <result property="trafficSalary" column="sTrafficSalary" jdbcType="INTEGER"/>
+            <result property="allSalary" column="sAllSalary" jdbcType="INTEGER"/>
+            <result property="pensionBase" column="sPensionBase" jdbcType="INTEGER"/>
+            <result property="pensionPer" column="sPensionPer" jdbcType="OTHER"/>
+            <result property="createDate" column="sCreateDate" jdbcType="TIMESTAMP"/>
+            <result property="medicalBase" column="sMedicalBase" jdbcType="INTEGER"/>
+            <result property="medicalPer" column="sMedicalPer" jdbcType="OTHER"/>
+            <result property="accumulationFundBase" column="sAccumulationFundBase" jdbcType="INTEGER"/>
+            <result property="accumulationFundPer" column="sAccumulationFundPer" jdbcType="OTHER"/>
+            <result property="name" column="sName" jdbcType="VARCHAR"/>
+        </association>
+    </resultMap>
+    <select id="getEmployeeSalaryByPage" resultMap="departAndSalary">
+        SELECT
+        e.id,
+        e.name,
+        e.workId,
+        e.email,
+        e.phone,
+        d.NAME dName,
+        s.id sId,
+        s.accumulationFundBase sAccumulationFundBase,
+        s.accumulationFundPer sAccumulationFundPer,
+        s.basicSalary sBasicSalary,
+        s.bonus sBonus,
+        s.createDate sCreateDate,
+        s.lunchSalary sLunchSalary,
+        s.medicalBase sMedicalBase,
+        s.medicalPer sMedicalPer,
+        s.trafficSalary sTrafficSalary,
+        s.pensionPer sPensionPer,
+        s.pensionBase sPensionBase,
+        s.NAME sName
+        FROM
+        employee e
+        LEFT JOIN department d ON e.departmentId = d.id
+        LEFT JOIN empsalary es ON e.id = es.eid
+        LEFT JOIN salary s ON es.sid = s.id
+        <if test="offset != null and size != null">
+            LIMIT #{offset} ,#{size}
+        </if>
+    </select>
+    <sql id="empColumns">
+        e
+        .
+        *
+        ,
+               n.`name`     nName,
+               p.`name`     pName,
+               d.`name`     dName,
+               j.`name`     JName,
+               j.titleLevel jTitleLevel,
+               pos.NAME     posName
+        FROM employee e
+                 LEFT JOIN nation n ON e.nationId = n.id
+                 LEFT JOIN politicsstatus p ON e.politicId = p.id
+                 LEFT JOIN department d ON e.departmentId = d.id
+                 LEFT JOIN joblevel j ON e.jobLevelId = j.id
+                 LEFT JOIN position pos ON e.posId = pos.id
+    </sql>
+    <select id="getAllEmployeeInfo" resultMap="AllEmployeeInfo">
+        SELECT
+        <include refid="empColumns"></include>
+        <if test=" employee != null ">
+            <where>
+                <if test="employee.id != null">
+                    and e.id=#{employee.id}
+                </if>
+                <if test="employee.name != null and employee.name != '' ">
+                    and e.name like concat('%',#{employee.name},'%')
+                </if>
+                <if test="employee.politicId != null  ">
+                    and e.politicId=#{employee.politicId}
+                </if>
+                <if test="employee.departmentId != null  ">
+                    and e.departmentId=#{employee.departmentId}
+                </if>
+                <if test="employee.engageForm != null and employee.engageForm != '' ">
+                    and e.engageForm=#{employee.engageForm}
+                </if>
+                <if test="employee.jobLevelId != null  ">
+                    and e.jobLevelId=#{employee.jobLevelId}
+                </if>
+                <if test="employee.nationId != null  ">
+                    and e.nationId=#{employee.nationId}
+                </if>
+                <if test="employee.posId != null  ">
+                    and e.posId=#{employee.posId}
+                </if>
+                <if test="employee.beginDate != null ">
+                    and e.beginDate
+                    between STR_TO_DATE(#{employee.beginDate}, '%Y-%m-%d %H:%i:%s') and STR_TO_DATE(
+                    #{employee.beginDateEnd}, '%Y-%m-%d %H:%i:%s')
+                </if>
+            </where>
+        </if>
+        <if test="offset != null and size != null">
+            LIMIT #{offset} ,#{size}
+        </if>
+    </select>
+
+    <select id="getWorkId" resultType="java.lang.String">
+        select max(workId)
+        from employee
+    </select>
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select id,
+               name,
+               gender,
+               birthday,
+               idCard,
+               wedlock,
+               nationId,
+               nativePlace,
+               politicId,
+               email,
+               phone,
+               address,
+               departmentId,
+               jobLevelId,
+               posId,
+               engageForm,
+               tiptopDegree,
+               specialty,
+               school,
+               beginDate,
+               workState,
+               workId,
+               contractTerm,
+               conversionTime,
+               notWorkDate,
+               beginContract,
+               endContract,
+               workAge
+        from vhr.employee
+        where id = #{id}
+    </select>
+
+    <select id="getTotal" resultType="java.lang.Integer">
+        select count(*)
+        from employee e
+        <where>
+            <if test="name != null and name != '' ">
+                and e.name like concat('%',#{name},'%')
+            </if>
+            <if test="politicId != null  ">
+                and e.politicId=#{politicId}
+            </if>
+            <if test="departmentId != null  ">
+                and e.departmentId=#{departmentId}
+            </if>
+            <if test="engageForm != null and engageForm != '' ">
+                and e.engageForm=#{engageForm}
+            </if>
+            <if test="jobLevelId != null  ">
+                and e.jobLevelId=#{jobLevelId}
+            </if>
+            <if test="nationId != null  ">
+                and e.nationId=#{nationId}
+            </if>
+            <if test="posId != null  ">
+                and e.posId=#{posId}
+            </if>
+            <if test="beginDate != null  ">
+                and e.beginDate
+                between STR_TO_DATE(#{beginDate}, '%Y-%m-%d %H:%i:%s') and STR_TO_DATE( #{beginDateEnd}, '%Y-%m-%d
+                %H:%i:%s')
+            </if>
+        </where>
+
+    </select>
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select id,
+               name,
+               gender,
+               birthday,
+               idCard,
+               wedlock,
+               nationId,
+               nativePlace,
+               politicId,
+               email,
+               phone,
+               address,
+               departmentId,
+               jobLevelId,
+               posId,
+               engageForm,
+               tiptopDegree,
+               specialty,
+               school,
+               beginDate,
+               workState,
+               workId,
+               contractTerm,
+               conversionTime,
+               notWorkDate,
+               beginContract,
+               endContract,
+               workAge
+        from vhr.employee limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+        id, name, gender, birthday, idCard, wedlock, nationId, nativePlace, politicId, email, phone, address,
+        departmentId, jobLevelId, posId, engageForm, tiptopDegree, specialty, school, beginDate, workState, workId,
+        contractTerm, conversionTime, notWorkDate, beginContract, endContract, workAge
+        from vhr.employee
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="name != null and name != ''">
+                and name = #{name}
+            </if>
+            <if test="gender != null and gender != ''">
+                and gender = #{gender}
+            </if>
+            <if test="birthday != null">
+                and birthday = #{birthday}
+            </if>
+            <if test="idCard != null and idCard != ''">
+                and idCard = #{idCard}
+            </if>
+            <if test="wedlock != null">
+                and wedlock = #{wedlock}
+            </if>
+            <if test="nationId != null">
+                and nationId = #{nationId}
+            </if>
+            <if test="nativePlace != null and nativePlace != ''">
+                and nativePlace = #{nativePlace}
+            </if>
+            <if test="politicId != null">
+                and politicId = #{politicId}
+            </if>
+            <if test="email != null and email != ''">
+                and email = #{email}
+            </if>
+            <if test="phone != null and phone != ''">
+                and phone = #{phone}
+            </if>
+            <if test="address != null and address != ''">
+                and address = #{address}
+            </if>
+            <if test="departmentId != null">
+                and departmentId = #{departmentId}
+            </if>
+            <if test="jobLevelId != null">
+                and jobLevelId = #{jobLevelId}
+            </if>
+            <if test="posId != null">
+                and posId = #{posId}
+            </if>
+            <if test="engageForm != null and engageForm != ''">
+                and engageForm = #{engageForm}
+            </if>
+            <if test="tiptopDegree != null">
+                and tiptopDegree = #{tiptopDegree}
+            </if>
+            <if test="specialty != null and specialty != ''">
+                and specialty = #{specialty}
+            </if>
+            <if test="school != null and school != ''">
+                and school = #{school}
+            </if>
+            <if test="beginDate != null">
+                and beginDate = #{beginDate}
+            </if>
+            <if test="workState != null">
+                and workState = #{workState}
+            </if>
+            <if test="workId != null and workId != ''">
+                and workId = #{workId}
+            </if>
+            <if test="contractTerm != null">
+                and contractTerm = #{contractTerm}
+            </if>
+            <if test="conversionTime != null">
+                and conversionTime = #{conversionTime}
+            </if>
+            <if test="notWorkDate != null">
+                and notWorkDate = #{notWorkDate}
+            </if>
+            <if test="beginContract != null">
+                and beginContract = #{beginContract}
+            </if>
+            <if test="endContract != null">
+                and endContract = #{endContract}
+            </if>
+            <if test="workAge != null">
+                and workAge = #{workAge}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into vhr.employee(name, gender, birthday, idCard, wedlock, nationId, nativePlace, politicId, email,
+                                 phone, address, departmentId, jobLevelId, posId, engageForm, tiptopDegree, specialty,
+                                 school, beginDate, workState, workId, contractTerm, conversionTime, notWorkDate,
+                                 beginContract, endContract, workAge)
+        values (#{name}, #{gender}, #{birthday}, #{idCard}, #{wedlock}, #{nationId}, #{nativePlace}, #{politicId},
+                #{email}, #{phone}, #{address}, #{departmentId}, #{jobLevelId}, #{posId}, #{engageForm},
+                #{tiptopDegree}, #{specialty}, #{school}, #{beginDate}, #{workState}, #{workId}, #{contractTerm},
+                #{conversionTime}, #{notWorkDate}, #{beginContract}, #{endContract}, #{workAge})
+    </insert>
+    <insert id="insertAll" keyProperty="id" useGeneratedKeys="true">
+        insert into vhr.employee(name, gender, birthday, idCard, wedlock, nationId, nativePlace, politicId, email,
+        phone, address, departmentId, jobLevelId, posId, engageForm, tiptopDegree, specialty,
+        school, beginDate, workState, workId, contractTerm, conversionTime, notWorkDate,
+        beginContract, endContract, workAge)
+        values
+        <foreach collection="list" item="employee" separator=",">
+            (#{employee.name}, #{employee.gender}, #{employee.birthday}, #{employee.idCard}, #{employee.wedlock},
+            #{employee.nation.id},
+            #{employee.nativePlace}, #{employee.politicsStatus.id},
+            #{employee.email}, #{employee.phone}, #{employee.address}, #{employee.department.id},
+            #{employee.jobLevel.id}, #{employee.position.id}, #{employee.engageForm},
+            #{employee.tiptopDegree}, #{employee.specialty}, #{employee.school}, #{employee.beginDate},
+            #{employee.workState}, #{employee.workId}, #{employee.contractTerm},
+            #{employee.conversionTime}, #{employee.notWorkDate}, #{employee.beginContract}, #{employee.endContract},
+            #{employee.workAge})
+        </foreach>
+    </insert>
+    <!--通过主键修改数据-->
+    <update id="update">
+        update vhr.employee
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="gender != null and gender != ''">
+                gender = #{gender},
+            </if>
+            <if test="birthday != null">
+                birthday = #{birthday},
+            </if>
+            <if test="idCard != null and idCard != ''">
+                idCard = #{idCard},
+            </if>
+            <if test="wedlock != null">
+                wedlock = #{wedlock},
+            </if>
+            <if test="nationId != null">
+                nationId = #{nationId},
+            </if>
+            <if test="nativePlace != null and nativePlace != ''">
+                nativePlace = #{nativePlace},
+            </if>
+            <if test="politicId != null">
+                politicId = #{politicId},
+            </if>
+            <if test="email != null and email != ''">
+                email = #{email},
+            </if>
+            <if test="phone != null and phone != ''">
+                phone = #{phone},
+            </if>
+            <if test="address != null and address != ''">
+                address = #{address},
+            </if>
+            <if test="departmentId != null">
+                departmentId = #{departmentId},
+            </if>
+            <if test="jobLevelId != null">
+                jobLevelId = #{jobLevelId},
+            </if>
+            <if test="posId != null">
+                posId = #{posId},
+            </if>
+            <if test="engageForm != null and engageForm != ''">
+                engageForm = #{engageForm},
+            </if>
+            <if test="tiptopDegree != null">
+                tiptopDegree = #{tiptopDegree},
+            </if>
+            <if test="specialty != null and specialty != ''">
+                specialty = #{specialty},
+            </if>
+            <if test="school != null and school != ''">
+                school = #{school},
+            </if>
+            <if test="beginDate != null">
+                beginDate = #{beginDate},
+            </if>
+            <if test="workState != null">
+                workState = #{workState},
+            </if>
+            <if test="workId != null and workId != ''">
+                workId = #{workId},
+            </if>
+            <if test="contractTerm != null">
+                contractTerm = #{contractTerm},
+            </if>
+            <if test="conversionTime != null">
+                conversionTime = #{conversionTime},
+            </if>
+            <if test="notWorkDate != null">
+                notWorkDate = #{notWorkDate},
+            </if>
+            <if test="beginContract != null">
+                beginContract = #{beginContract},
+            </if>
+            <if test="endContract != null">
+                endContract = #{endContract},
+            </if>
+            <if test="workAge != null">
+                workAge = #{workAge},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from vhr.employee
+        where id = #{id}
+    </delete>
+
+</mapper>

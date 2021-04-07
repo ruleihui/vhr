@@ -1,0 +1,11 @@
+[2021-04-08 00:10:24,465][http-nio-8081-exec-4][WARN][com.example.aop.LogComponent:30] throwingLog:declaringTypeName:com.example.config.RoleDecisionManagermethod:decidemessage:权限不足,请联系管理员
+[2021-04-08 00:10:24,768][http-nio-8081-exec-5][WARN][com.example.aop.LogComponent:30] throwingLog:declaringTypeName:com.example.config.RoleDecisionManagermethod:decidemessage:权限不足,请联系管理员
+[2021-04-08 00:10:24,770][http-nio-8081-exec-3][WARN][com.example.aop.LogComponent:30] throwingLog:declaringTypeName:com.example.config.RoleDecisionManagermethod:decidemessage:权限不足,请联系管理员
+[2021-04-08 00:10:24,779][http-nio-8081-exec-7][WARN][com.example.aop.LogComponent:30] throwingLog:declaringTypeName:com.example.config.RoleDecisionManagermethod:decidemessage:权限不足,请联系管理员
+[2021-04-08 00:10:24,781][http-nio-8081-exec-6][WARN][com.example.aop.LogComponent:30] throwingLog:declaringTypeName:com.example.config.RoleDecisionManagermethod:decidemessage:权限不足,请联系管理员
+[2021-04-08 00:10:24,782][http-nio-8081-exec-8][WARN][com.example.aop.LogComponent:30] throwingLog:declaringTypeName:com.example.config.RoleDecisionManagermethod:decidemessage:权限不足,请联系管理员
+[2021-04-08 00:10:35,291][http-nio-8081-exec-10][WARN][com.example.aop.LogComponent:30] throwingLog:declaringTypeName:com.example.config.RoleDecisionManagermethod:decidemessage:权限不足,请联系管理员
+[2021-04-08 00:37:26,202][http-nio-8081-exec-1][WARN][com.example.aop.LogComponent:30] throwingLog:declaringTypeName:com.example.config.RoleDecisionManagermethod:decidemessage:请登录
+[2021-04-08 00:37:26,406][http-nio-8081-exec-3][WARN][com.example.aop.LogComponent:30] throwingLog:declaringTypeName:com.example.config.RoleDecisionManagermethod:decidemessage:请登录
+[2021-04-08 00:37:26,726][http-nio-8081-exec-2][WARN][com.example.aop.LogComponent:30] throwingLog:declaringTypeName:com.example.config.RoleDecisionManagermethod:decidemessage:请登录
+[2021-04-08 00:37:27,022][http-nio-8081-exec-4][WARN][com.example.aop.LogComponent:30] throwingLog:declaringTypeName:com.example.config.RoleDecisionManagermethod:decidemessage:请登录

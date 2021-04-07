@@ -1,0 +1,996 @@
+[2021-04-08 00:00:00,026][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:00:00,122][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:00:00,123][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:00:10,006][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:00:10,009][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:00:10,012][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:00:20,004][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:00:20,004][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:00:20,005][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:00:30,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:00:30,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:00:30,004][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:00:40,004][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:00:40,005][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:00:40,008][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:00:50,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:00:50,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:00:50,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:01:00,006][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:01:00,009][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:01:00,012][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:01:10,005][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:01:10,006][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:01:10,009][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:01:11,127][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] ==>  Preparing: SELECT h.*, r.id rid, r.`name` rName, r.nameZh rNameZh FROM hr h, role r, hr_role hrr WHERE h.username = ? AND h.id = hrr.hrid AND r.id = hrr.rid
+[2021-04-08 00:01:11,128][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] ==> Parameters: admin(String)
+[2021-04-08 00:01:11,135][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] <==      Total: 1
+[2021-04-08 00:01:11,345][http-nio-8081-exec-3][DEBUG][com.example.dao.MenuDao.getAllMenusWithRole:137] ==>  Preparing: SELECT m.*, r.id rid, r.`name` rName, r.nameZh rNameZh FROM role r LEFT JOIN menu_role mr ON r.id = mr.rid LEFT JOIN menu m ON mr.mid = m.id ORDER BY m.id;
+[2021-04-08 00:01:11,345][http-nio-8081-exec-3][DEBUG][com.example.dao.MenuDao.getAllMenusWithRole:137] ==> Parameters: 
+[2021-04-08 00:01:11,365][http-nio-8081-exec-3][DEBUG][com.example.dao.MenuDao.getAllMenusWithRole:137] <==      Total: 86
+[2021-04-08 00:01:11,374][http-nio-8081-exec-3][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] ==>  Preparing: SELECT DISTINCT m1.*, m.id id1, m.url url1, m.path path1, m.component component1, m.NAME name1, m.iconCls iconCls1, m.keepAlive keepAlive1, m.requireAuth requireAuth1, m.parentId parentId1, m.enabled enabled1 FROM menu m1, menu m LEFT JOIN menu_role mr ON m.id = mr.mid LEFT JOIN hr_role hrr ON mr.rid = hrr.rid WHERE hrr.hrid = ? AND m.enabled = TRUE AND m1.id = m.parentId;
+[2021-04-08 00:01:11,374][http-nio-8081-exec-3][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] ==> Parameters: 3(Integer)
+[2021-04-08 00:01:11,381][http-nio-8081-exec-3][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] <==      Total: 21
+[2021-04-08 00:01:11,462][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:01:11,462][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 3(Integer)
+[2021-04-08 00:01:11,466][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:01:20,005][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:01:20,006][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:01:20,009][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:01:30,002][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:01:30,003][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:01:30,004][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:01:40,000][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:01:40,001][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:01:40,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:01:50,005][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:01:50,006][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:01:50,009][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:02:00,004][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:02:00,005][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:02:00,007][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:02:10,001][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:02:10,002][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:02:10,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:02:20,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:02:20,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:02:20,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:02:30,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:02:30,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:02:30,004][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:02:40,001][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:02:40,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:02:40,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:02:50,000][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:02:50,001][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:02:50,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:03:00,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:03:00,005][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:03:00,006][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:03:10,002][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:03:10,002][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:03:10,003][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:03:20,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:03:20,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:03:20,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:03:30,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:03:30,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:03:30,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:03:40,001][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:03:40,001][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:03:40,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:03:40,878][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] ==>  Preparing: SELECT h.*, r.id rid, r.`name` rName, r.nameZh rNameZh FROM hr h, role r, hr_role hrr WHERE h.username = ? AND h.id = hrr.hrid AND r.id = hrr.rid
+[2021-04-08 00:03:40,879][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] ==> Parameters: youke1(String)
+[2021-04-08 00:03:40,880][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] <==      Total: 1
+[2021-04-08 00:03:41,326][http-nio-8081-exec-3][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] ==>  Preparing: SELECT DISTINCT m1.*, m.id id1, m.url url1, m.path path1, m.component component1, m.NAME name1, m.iconCls iconCls1, m.keepAlive keepAlive1, m.requireAuth requireAuth1, m.parentId parentId1, m.enabled enabled1 FROM menu m1, menu m LEFT JOIN menu_role mr ON m.id = mr.mid LEFT JOIN hr_role hrr ON mr.rid = hrr.rid WHERE hrr.hrid = ? AND m.enabled = TRUE AND m1.id = m.parentId;
+[2021-04-08 00:03:41,326][http-nio-8081-exec-3][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:03:41,330][http-nio-8081-exec-3][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] <==      Total: 5
+[2021-04-08 00:03:41,575][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:03:41,575][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:03:41,711][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:03:50,005][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:03:50,007][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:03:50,011][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:04:00,002][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:04:00,003][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:04:00,004][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:04:10,001][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:04:10,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:04:10,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:04:20,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:04:20,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:04:20,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:04:30,001][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:04:30,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:04:30,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:04:40,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:04:40,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:04:40,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:04:50,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:04:50,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:04:50,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:05:00,002][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:05:00,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:05:00,004][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:05:10,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:05:10,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:05:10,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:05:20,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:05:20,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:05:20,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:05:30,004][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:05:30,005][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:05:30,008][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:05:40,004][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:05:40,006][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:05:40,008][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:05:50,001][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:05:50,001][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:05:50,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:06:00,006][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:06:00,007][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:06:00,008][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:06:08,764][http-nio-8081-exec-9][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET userface = ? where id = ?
+[2021-04-08 00:06:08,764][http-nio-8081-exec-9][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: \upload\D:\upload\TCP_IP.jpg(String), 26(Integer)
+[2021-04-08 00:06:08,927][http-nio-8081-exec-9][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:06:10,001][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:06:10,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:06:10,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:06:20,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:06:20,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:06:20,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:06:30,004][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:06:30,005][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:06:30,009][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:06:40,001][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:06:40,001][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:06:40,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:06:44,044][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:06:44,045][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:06:44,050][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:06:50,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:06:50,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:06:50,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:06:59,572][http-nio-8081-exec-8][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET userface = ? where id = ?
+[2021-04-08 00:06:59,572][http-nio-8081-exec-8][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: \upload\D:\upload\TCP_IP.jpg(String), 26(Integer)
+[2021-04-08 00:06:59,573][http-nio-8081-exec-8][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:07:00,001][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:07:00,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:07:00,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:07:10,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:07:10,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:07:10,004][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:07:20,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:07:20,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:07:20,004][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:07:21,841][http-nio-8081-exec-9][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:07:21,841][http-nio-8081-exec-9][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:07:21,848][http-nio-8081-exec-9][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:07:30,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:07:30,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:07:30,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:07:31,171][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:07:31,171][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:07:31,174][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:07:40,004][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:07:40,005][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:07:40,008][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:07:43,461][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET userface = ? where id = ?
+[2021-04-08 00:07:43,462][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: \upload\D:\upload\TCP_IP.jpg(String), 26(Integer)
+[2021-04-08 00:07:43,463][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:07:50,001][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:07:50,001][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:07:50,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:08:00,002][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:08:00,002][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:08:00,003][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:08:10,000][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:08:10,001][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:08:10,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:08:20,003][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:08:20,003][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:08:20,004][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:08:30,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:08:30,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:08:30,005][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:08:40,004][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:08:40,005][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:08:40,008][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:08:50,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:08:50,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:08:50,004][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:09:00,004][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:09:00,004][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:09:00,005][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:09:10,001][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:09:10,001][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:09:10,002][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:09:20,005][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:09:20,006][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:09:20,009][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:09:30,005][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:09:30,006][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:09:30,007][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:09:40,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:09:40,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:09:40,006][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:09:50,001][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:09:50,001][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:09:50,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:10:00,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:10:00,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:10:00,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:10:09,939][http-nio-8081-exec-5][DEBUG][com.example.dao.RoleDao.queryAll:137] ==>  Preparing: select id, name, nameZh from vhr.role
+[2021-04-08 00:10:09,940][http-nio-8081-exec-5][DEBUG][com.example.dao.RoleDao.queryAll:137] ==> Parameters: 
+[2021-04-08 00:10:09,941][http-nio-8081-exec-5][DEBUG][com.example.dao.RoleDao.queryAll:137] <==      Total: 9
+[2021-04-08 00:10:09,941][http-nio-8081-exec-3][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:10:09,942][http-nio-8081-exec-3][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:10:09,946][http-nio-8081-exec-3][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:10:10,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:10:10,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:10:10,005][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:10:13,535][http-nio-8081-exec-7][DEBUG][com.example.dao.DepartmentDao.queryAll:137] ==>  Preparing: select id, name, parentId, depPath, enabled, isParent from vhr.department
+[2021-04-08 00:10:13,535][http-nio-8081-exec-7][DEBUG][com.example.dao.DepartmentDao.queryAll:137] ==> Parameters: 
+[2021-04-08 00:10:13,541][http-nio-8081-exec-7][DEBUG][com.example.dao.DepartmentDao.queryAll:137] <==      Total: 16
+[2021-04-08 00:10:14,954][http-nio-8081-exec-8][DEBUG][com.example.dao.RoleDao.queryAll:137] ==>  Preparing: select id, name, nameZh from vhr.role
+[2021-04-08 00:10:14,954][http-nio-8081-exec-8][DEBUG][com.example.dao.RoleDao.queryAll:137] ==> Parameters: 
+[2021-04-08 00:10:14,954][http-nio-8081-exec-10][DEBUG][com.example.dao.MenuDao.queryMenuAndChild:137] ==>  Preparing: SELECT m.id id, m.NAME NAME, m1.id m1Id, m1.NAME m1Name, m2.id m2Id, m2.NAME m2Name FROM menu m LEFT JOIN menu m1 ON m.id = m1.parentId LEFT JOIN menu m2 ON m1.id = m2.parentId WHERE m.id = 1 and m2.enabled = true ORDER BY m1Id, m2Id
+[2021-04-08 00:10:14,955][http-nio-8081-exec-10][DEBUG][com.example.dao.MenuDao.queryMenuAndChild:137] ==> Parameters: 
+[2021-04-08 00:10:14,955][http-nio-8081-exec-8][DEBUG][com.example.dao.RoleDao.queryAll:137] <==      Total: 9
+[2021-04-08 00:10:14,957][http-nio-8081-exec-10][DEBUG][com.example.dao.MenuDao.queryMenuAndChild:137] <==      Total: 22
+[2021-04-08 00:10:16,461][http-nio-8081-exec-9][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] ==>  Preparing: select mid from menu_role where rid = ?
+[2021-04-08 00:10:16,461][http-nio-8081-exec-9][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] ==> Parameters: 39(Integer)
+[2021-04-08 00:10:16,461][http-nio-8081-exec-9][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] <==      Total: 5
+[2021-04-08 00:10:20,006][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:10:20,007][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:10:20,009][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:10:21,832][http-nio-8081-exec-1][DEBUG][com.example.dao.MenuDao.deleteMenusById:137] ==>  Preparing: delete from menu_role where rid = ?
+[2021-04-08 00:10:21,832][http-nio-8081-exec-1][DEBUG][com.example.dao.MenuDao.deleteMenusById:137] ==> Parameters: 39(Integer)
+[2021-04-08 00:10:21,835][http-nio-8081-exec-1][DEBUG][com.example.dao.MenuDao.deleteMenusById:137] <==    Updates: 5
+[2021-04-08 00:10:21,839][http-nio-8081-exec-1][DEBUG][com.example.dao.MenuDao.insertRelevanceByRoleId:137] ==>  Preparing: insert into menu_role(mid,rid) values (?,?) , (?,?) , (?,?) , (?,?)
+[2021-04-08 00:10:21,839][http-nio-8081-exec-1][DEBUG][com.example.dao.MenuDao.insertRelevanceByRoleId:137] ==> Parameters: 14(Integer), 39(Integer), 15(Integer), 39(Integer), 23(Integer), 39(Integer), 26(Integer), 39(Integer)
+[2021-04-08 00:10:21,840][http-nio-8081-exec-1][DEBUG][com.example.dao.MenuDao.insertRelevanceByRoleId:137] <==    Updates: 4
+[2021-04-08 00:10:22,046][http-nio-8081-exec-2][DEBUG][com.example.dao.MenuDao.getAllMenusWithRole:137] ==>  Preparing: SELECT m.*, r.id rid, r.`name` rName, r.nameZh rNameZh FROM role r LEFT JOIN menu_role mr ON r.id = mr.rid LEFT JOIN menu m ON mr.mid = m.id ORDER BY m.id;
+[2021-04-08 00:10:22,046][http-nio-8081-exec-2][DEBUG][com.example.dao.MenuDao.getAllMenusWithRole:137] ==> Parameters: 
+[2021-04-08 00:10:22,052][http-nio-8081-exec-2][DEBUG][com.example.dao.MenuDao.getAllMenusWithRole:137] <==      Total: 85
+[2021-04-08 00:10:22,054][http-nio-8081-exec-2][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] ==>  Preparing: select mid from menu_role where rid = ?
+[2021-04-08 00:10:22,055][http-nio-8081-exec-2][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] ==> Parameters: 39(Integer)
+[2021-04-08 00:10:22,056][http-nio-8081-exec-2][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] <==      Total: 4
+[2021-04-08 00:10:30,002][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:10:30,002][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:10:30,003][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:10:40,001][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:10:40,002][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:10:40,003][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:10:46,079][http-nio-8081-exec-9][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:10:46,079][http-nio-8081-exec-9][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:10:46,081][http-nio-8081-exec-9][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:10:46,384][http-nio-8081-exec-1][DEBUG][com.example.dao.RoleDao.queryAll:137] ==>  Preparing: select id, name, nameZh from vhr.role
+[2021-04-08 00:10:46,385][http-nio-8081-exec-1][DEBUG][com.example.dao.RoleDao.queryAll:137] ==> Parameters: 
+[2021-04-08 00:10:46,387][http-nio-8081-exec-1][DEBUG][com.example.dao.RoleDao.queryAll:137] <==      Total: 9
+[2021-04-08 00:10:48,947][http-nio-8081-exec-4][DEBUG][com.example.dao.DepartmentDao.queryAll:137] ==>  Preparing: select id, name, parentId, depPath, enabled, isParent from vhr.department
+[2021-04-08 00:10:48,948][http-nio-8081-exec-4][DEBUG][com.example.dao.DepartmentDao.queryAll:137] ==> Parameters: 
+[2021-04-08 00:10:48,949][http-nio-8081-exec-4][DEBUG][com.example.dao.DepartmentDao.queryAll:137] <==      Total: 16
+[2021-04-08 00:10:49,701][http-nio-8081-exec-5][DEBUG][com.example.dao.RoleDao.queryAll:137] ==>  Preparing: select id, name, nameZh from vhr.role
+[2021-04-08 00:10:49,702][http-nio-8081-exec-5][DEBUG][com.example.dao.RoleDao.queryAll:137] ==> Parameters: 
+[2021-04-08 00:10:49,703][http-nio-8081-exec-5][DEBUG][com.example.dao.RoleDao.queryAll:137] <==      Total: 9
+[2021-04-08 00:10:50,004][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:10:50,004][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:10:50,006][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:10:50,006][http-nio-8081-exec-3][DEBUG][com.example.dao.MenuDao.queryMenuAndChild:137] ==>  Preparing: SELECT m.id id, m.NAME NAME, m1.id m1Id, m1.NAME m1Name, m2.id m2Id, m2.NAME m2Name FROM menu m LEFT JOIN menu m1 ON m.id = m1.parentId LEFT JOIN menu m2 ON m1.id = m2.parentId WHERE m.id = 1 and m2.enabled = true ORDER BY m1Id, m2Id
+[2021-04-08 00:10:50,006][http-nio-8081-exec-3][DEBUG][com.example.dao.MenuDao.queryMenuAndChild:137] ==> Parameters: 
+[2021-04-08 00:10:50,008][http-nio-8081-exec-3][DEBUG][com.example.dao.MenuDao.queryMenuAndChild:137] <==      Total: 22
+[2021-04-08 00:10:51,129][http-nio-8081-exec-6][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] ==>  Preparing: select mid from menu_role where rid = ?
+[2021-04-08 00:10:51,130][http-nio-8081-exec-6][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] ==> Parameters: 39(Integer)
+[2021-04-08 00:10:51,131][http-nio-8081-exec-6][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] <==      Total: 4
+[2021-04-08 00:10:54,769][http-nio-8081-exec-7][DEBUG][com.example.dao.MenuDao.deleteMenusById:137] ==>  Preparing: delete from menu_role where rid = ?
+[2021-04-08 00:10:54,769][http-nio-8081-exec-7][DEBUG][com.example.dao.MenuDao.deleteMenusById:137] ==> Parameters: 39(Integer)
+[2021-04-08 00:10:54,771][http-nio-8081-exec-7][DEBUG][com.example.dao.MenuDao.deleteMenusById:137] <==    Updates: 4
+[2021-04-08 00:10:54,773][http-nio-8081-exec-7][DEBUG][com.example.dao.MenuDao.insertRelevanceByRoleId:137] ==>  Preparing: insert into menu_role(mid,rid) values (?,?) , (?,?) , (?,?) , (?,?) , (?,?)
+[2021-04-08 00:10:54,773][http-nio-8081-exec-7][DEBUG][com.example.dao.MenuDao.insertRelevanceByRoleId:137] ==> Parameters: 7(Integer), 39(Integer), 14(Integer), 39(Integer), 15(Integer), 39(Integer), 23(Integer), 39(Integer), 26(Integer), 39(Integer)
+[2021-04-08 00:10:54,774][http-nio-8081-exec-7][DEBUG][com.example.dao.MenuDao.insertRelevanceByRoleId:137] <==    Updates: 5
+[2021-04-08 00:10:55,241][http-nio-8081-exec-8][DEBUG][com.example.dao.MenuDao.getAllMenusWithRole:137] ==>  Preparing: SELECT m.*, r.id rid, r.`name` rName, r.nameZh rNameZh FROM role r LEFT JOIN menu_role mr ON r.id = mr.rid LEFT JOIN menu m ON mr.mid = m.id ORDER BY m.id;
+[2021-04-08 00:10:55,241][http-nio-8081-exec-8][DEBUG][com.example.dao.MenuDao.getAllMenusWithRole:137] ==> Parameters: 
+[2021-04-08 00:10:55,246][http-nio-8081-exec-8][DEBUG][com.example.dao.MenuDao.getAllMenusWithRole:137] <==      Total: 86
+[2021-04-08 00:10:55,248][http-nio-8081-exec-8][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] ==>  Preparing: select mid from menu_role where rid = ?
+[2021-04-08 00:10:55,249][http-nio-8081-exec-8][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] ==> Parameters: 39(Integer)
+[2021-04-08 00:10:55,249][http-nio-8081-exec-8][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] <==      Total: 5
+[2021-04-08 00:10:57,932][http-nio-8081-exec-10][DEBUG][com.example.dao.EmployeeDao.getAllEmployeeInfo:137] ==>  Preparing: SELECT e . * , n.`name` nName, p.`name` pName, d.`name` dName, j.`name` JName, j.titleLevel jTitleLevel, pos.NAME posName FROM employee e LEFT JOIN nation n ON e.nationId = n.id LEFT JOIN politicsstatus p ON e.politicId = p.id LEFT JOIN department d ON e.departmentId = d.id LEFT JOIN joblevel j ON e.jobLevelId = j.id LEFT JOIN position pos ON e.posId = pos.id LIMIT ? ,?
+[2021-04-08 00:10:57,932][http-nio-8081-exec-10][DEBUG][com.example.dao.EmployeeDao.getAllEmployeeInfo:137] ==> Parameters: 0(Integer), 10(Integer)
+[2021-04-08 00:10:57,941][http-nio-8081-exec-10][DEBUG][com.example.dao.EmployeeDao.getAllEmployeeInfo:137] <==      Total: 10
+[2021-04-08 00:10:57,943][http-nio-8081-exec-10][DEBUG][com.example.dao.EmployeeDao.getTotal:137] ==>  Preparing: select count(*) from employee e
+[2021-04-08 00:10:57,944][http-nio-8081-exec-10][DEBUG][com.example.dao.EmployeeDao.getTotal:137] ==> Parameters: 
+[2021-04-08 00:10:57,945][http-nio-8081-exec-10][DEBUG][com.example.dao.EmployeeDao.getTotal:137] <==      Total: 1
+[2021-04-08 00:10:58,216][http-nio-8081-exec-9][DEBUG][com.example.dao.NationDao.queryAll:137] ==>  Preparing: select id, name from vhr.nation
+[2021-04-08 00:10:58,217][http-nio-8081-exec-9][DEBUG][com.example.dao.NationDao.queryAll:137] ==> Parameters: 
+[2021-04-08 00:10:58,221][http-nio-8081-exec-9][DEBUG][com.example.dao.NationDao.queryAll:137] <==      Total: 56
+[2021-04-08 00:10:58,224][http-nio-8081-exec-2][DEBUG][com.example.dao.DepartmentDao.queryAll:137] ==>  Preparing: select id, name, parentId, depPath, enabled, isParent from vhr.department
+[2021-04-08 00:10:58,225][http-nio-8081-exec-1][DEBUG][com.example.dao.PoliticsStatusDao.queryAll:137] ==>  Preparing: select id, name from vhr.politicsstatus
+[2021-04-08 00:10:58,225][http-nio-8081-exec-2][DEBUG][com.example.dao.DepartmentDao.queryAll:137] ==> Parameters: 
+[2021-04-08 00:10:58,227][http-nio-8081-exec-1][DEBUG][com.example.dao.PoliticsStatusDao.queryAll:137] ==> Parameters: 
+[2021-04-08 00:10:58,227][http-nio-8081-exec-2][DEBUG][com.example.dao.DepartmentDao.queryAll:137] <==      Total: 16
+[2021-04-08 00:10:58,228][http-nio-8081-exec-5][DEBUG][com.example.dao.system.basic.PositionDao.queryAll:137] ==>  Preparing: select id, name, createDate, enabled from vhr.position
+[2021-04-08 00:10:58,229][http-nio-8081-exec-5][DEBUG][com.example.dao.system.basic.PositionDao.queryAll:137] ==> Parameters: 
+[2021-04-08 00:10:58,229][http-nio-8081-exec-1][DEBUG][com.example.dao.PoliticsStatusDao.queryAll:137] <==      Total: 13
+[2021-04-08 00:10:58,231][http-nio-8081-exec-4][DEBUG][com.example.dao.system.basic.JobLevelDao.queryAll:137] ==>  Preparing: select id, name, titleLevel, createDate, enabled from vhr.joblevel
+[2021-04-08 00:10:58,232][http-nio-8081-exec-4][DEBUG][com.example.dao.system.basic.JobLevelDao.queryAll:137] ==> Parameters: 
+[2021-04-08 00:10:58,232][http-nio-8081-exec-5][DEBUG][com.example.dao.system.basic.PositionDao.queryAll:137] <==      Total: 6
+[2021-04-08 00:10:58,236][http-nio-8081-exec-4][DEBUG][com.example.dao.system.basic.JobLevelDao.queryAll:137] <==      Total: 10
+[2021-04-08 00:11:00,005][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:11:00,006][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:11:00,013][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:11:10,002][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:11:10,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:11:10,005][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:11:20,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:11:20,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:11:20,004][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:11:20,252][http-nio-8081-exec-3][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:11:20,252][http-nio-8081-exec-3][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:11:20,252][http-nio-8081-exec-6][DEBUG][com.example.dao.RoleDao.queryAll:137] ==>  Preparing: select id, name, nameZh from vhr.role
+[2021-04-08 00:11:20,253][http-nio-8081-exec-6][DEBUG][com.example.dao.RoleDao.queryAll:137] ==> Parameters: 
+[2021-04-08 00:11:20,254][http-nio-8081-exec-6][DEBUG][com.example.dao.RoleDao.queryAll:137] <==      Total: 9
+[2021-04-08 00:11:20,255][http-nio-8081-exec-3][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:11:21,863][http-nio-8081-exec-8][DEBUG][com.example.dao.DepartmentDao.queryAll:137] ==>  Preparing: select id, name, parentId, depPath, enabled, isParent from vhr.department
+[2021-04-08 00:11:21,864][http-nio-8081-exec-8][DEBUG][com.example.dao.DepartmentDao.queryAll:137] ==> Parameters: 
+[2021-04-08 00:11:21,865][http-nio-8081-exec-8][DEBUG][com.example.dao.DepartmentDao.queryAll:137] <==      Total: 16
+[2021-04-08 00:11:23,365][http-nio-8081-exec-10][DEBUG][com.example.dao.RoleDao.queryAll:137] ==>  Preparing: select id, name, nameZh from vhr.role
+[2021-04-08 00:11:23,365][http-nio-8081-exec-9][DEBUG][com.example.dao.MenuDao.queryMenuAndChild:137] ==>  Preparing: SELECT m.id id, m.NAME NAME, m1.id m1Id, m1.NAME m1Name, m2.id m2Id, m2.NAME m2Name FROM menu m LEFT JOIN menu m1 ON m.id = m1.parentId LEFT JOIN menu m2 ON m1.id = m2.parentId WHERE m.id = 1 and m2.enabled = true ORDER BY m1Id, m2Id
+[2021-04-08 00:11:23,366][http-nio-8081-exec-10][DEBUG][com.example.dao.RoleDao.queryAll:137] ==> Parameters: 
+[2021-04-08 00:11:23,366][http-nio-8081-exec-9][DEBUG][com.example.dao.MenuDao.queryMenuAndChild:137] ==> Parameters: 
+[2021-04-08 00:11:23,367][http-nio-8081-exec-10][DEBUG][com.example.dao.RoleDao.queryAll:137] <==      Total: 9
+[2021-04-08 00:11:23,368][http-nio-8081-exec-9][DEBUG][com.example.dao.MenuDao.queryMenuAndChild:137] <==      Total: 22
+[2021-04-08 00:11:26,466][http-nio-8081-exec-2][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] ==>  Preparing: select mid from menu_role where rid = ?
+[2021-04-08 00:11:26,467][http-nio-8081-exec-2][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] ==> Parameters: 39(Integer)
+[2021-04-08 00:11:26,468][http-nio-8081-exec-2][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] <==      Total: 5
+[2021-04-08 00:11:30,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:11:30,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:11:30,004][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:11:30,411][http-nio-8081-exec-1][DEBUG][com.example.dao.MenuDao.deleteMenusById:137] ==>  Preparing: delete from menu_role where rid = ?
+[2021-04-08 00:11:30,411][http-nio-8081-exec-1][DEBUG][com.example.dao.MenuDao.deleteMenusById:137] ==> Parameters: 39(Integer)
+[2021-04-08 00:11:30,412][http-nio-8081-exec-1][DEBUG][com.example.dao.MenuDao.deleteMenusById:137] <==    Updates: 5
+[2021-04-08 00:11:30,413][http-nio-8081-exec-1][DEBUG][com.example.dao.MenuDao.insertRelevanceByRoleId:137] ==>  Preparing: insert into menu_role(mid,rid) values (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?) , (?,?)
+[2021-04-08 00:11:30,414][http-nio-8081-exec-1][DEBUG][com.example.dao.MenuDao.insertRelevanceByRoleId:137] ==> Parameters: 7(Integer), 39(Integer), 8(Integer), 39(Integer), 9(Integer), 39(Integer), 10(Integer), 39(Integer), 11(Integer), 39(Integer), 12(Integer), 39(Integer), 13(Integer), 39(Integer), 14(Integer), 39(Integer), 15(Integer), 39(Integer), 16(Integer), 39(Integer), 17(Integer), 39(Integer), 18(Integer), 39(Integer), 19(Integer), 39(Integer), 20(Integer), 39(Integer), 21(Integer), 39(Integer), 22(Integer), 39(Integer), 23(Integer), 39(Integer), 24(Integer), 39(Integer), 25(Integer), 39(Integer), 26(Integer), 39(Integer), 27(Integer), 39(Integer), 28(Integer), 39(Integer)
+[2021-04-08 00:11:30,416][http-nio-8081-exec-1][DEBUG][com.example.dao.MenuDao.insertRelevanceByRoleId:137] <==    Updates: 22
+[2021-04-08 00:11:30,662][http-nio-8081-exec-5][DEBUG][com.example.dao.MenuDao.getAllMenusWithRole:137] ==>  Preparing: SELECT m.*, r.id rid, r.`name` rName, r.nameZh rNameZh FROM role r LEFT JOIN menu_role mr ON r.id = mr.rid LEFT JOIN menu m ON mr.mid = m.id ORDER BY m.id;
+[2021-04-08 00:11:30,662][http-nio-8081-exec-5][DEBUG][com.example.dao.MenuDao.getAllMenusWithRole:137] ==> Parameters: 
+[2021-04-08 00:11:30,689][http-nio-8081-exec-5][DEBUG][com.example.dao.MenuDao.getAllMenusWithRole:137] <==      Total: 103
+[2021-04-08 00:11:30,691][http-nio-8081-exec-5][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] ==>  Preparing: select mid from menu_role where rid = ?
+[2021-04-08 00:11:30,691][http-nio-8081-exec-5][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] ==> Parameters: 39(Integer)
+[2021-04-08 00:11:30,692][http-nio-8081-exec-5][DEBUG][com.example.dao.MenuDao.getMenusByRoleId:137] <==      Total: 22
+[2021-04-08 00:11:39,286][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] ==>  Preparing: SELECT h.*, r.id rid, r.`name` rName, r.nameZh rNameZh FROM hr h, role r, hr_role hrr WHERE h.username = ? AND h.id = hrr.hrid AND r.id = hrr.rid
+[2021-04-08 00:11:39,286][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] ==> Parameters: youke1(String)
+[2021-04-08 00:11:39,287][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] <==      Total: 1
+[2021-04-08 00:11:39,769][http-nio-8081-exec-8][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] ==>  Preparing: SELECT DISTINCT m1.*, m.id id1, m.url url1, m.path path1, m.component component1, m.NAME name1, m.iconCls iconCls1, m.keepAlive keepAlive1, m.requireAuth requireAuth1, m.parentId parentId1, m.enabled enabled1 FROM menu m1, menu m LEFT JOIN menu_role mr ON m.id = mr.mid LEFT JOIN hr_role hrr ON mr.rid = hrr.rid WHERE hrr.hrid = ? AND m.enabled = TRUE AND m1.id = m.parentId;
+[2021-04-08 00:11:39,770][http-nio-8081-exec-8][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:11:39,878][http-nio-8081-exec-8][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] <==      Total: 22
+[2021-04-08 00:11:40,001][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:11:40,001][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:11:40,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:11:40,008][http-nio-8081-exec-10][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:11:40,009][http-nio-8081-exec-10][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:11:40,010][http-nio-8081-exec-10][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:11:50,004][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:11:50,005][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:11:50,008][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:12:00,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:12:00,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:12:00,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:12:10,002][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:12:10,002][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:12:10,003][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:12:20,005][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:12:20,006][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:12:20,008][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:12:30,004][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:12:30,005][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:12:30,008][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:12:40,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:12:40,005][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:12:40,008][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:12:50,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:12:50,004][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:12:50,005][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:13:00,006][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:13:00,007][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:13:00,009][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:13:10,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:13:10,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:13:10,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:13:20,004][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:13:20,005][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:13:20,007][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:13:30,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:13:30,004][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:13:30,007][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:13:40,001][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:13:40,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:13:40,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:13:50,004][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:13:50,005][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:13:50,007][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:13:56,796][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET userface = ? where id = ?
+[2021-04-08 00:13:56,796][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: \upload\D:\upload\TCP_IP.jpg(String), 26(Integer)
+[2021-04-08 00:13:56,797][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:14:00,004][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:14:00,005][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:14:00,007][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:14:10,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:14:10,004][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:14:10,005][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:14:20,002][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:14:20,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:14:20,004][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:14:30,003][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:14:30,004][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:14:30,007][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:14:40,002][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:14:40,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:14:40,006][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:14:50,003][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:14:50,004][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:14:50,007][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:15:00,002][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:15:00,002][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:15:00,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:15:10,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:15:10,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:15:10,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:15:20,001][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:15:20,001][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:15:20,002][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:15:30,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:15:30,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:15:30,004][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:15:40,001][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:15:40,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:15:40,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:15:50,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:15:50,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:15:50,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:16:00,007][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:16:00,009][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:16:00,013][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:16:10,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:16:10,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:16:10,005][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:16:16,328][http-nio-8081-exec-8][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET userface = ? where id = ?
+[2021-04-08 00:16:16,329][http-nio-8081-exec-8][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: \upload\D:\upload\TCP_IP.jpg(String), 26(Integer)
+[2021-04-08 00:16:16,330][http-nio-8081-exec-8][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:16:20,002][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:16:20,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:16:20,006][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:16:30,004][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:16:30,005][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:16:30,009][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:16:40,004][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:16:40,004][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:16:40,007][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:16:50,004][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:16:50,005][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:16:50,008][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:17:00,002][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:17:00,003][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:17:00,005][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:17:10,005][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:17:10,005][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:17:10,008][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:17:20,003][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:17:20,003][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:17:20,004][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:17:30,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:17:30,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:17:30,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:17:40,001][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:17:40,002][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:17:40,002][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:17:50,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:17:50,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:17:50,007][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:18:00,005][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:18:00,006][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:18:00,008][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:18:10,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:18:10,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:18:10,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:18:20,002][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:18:20,002][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:18:20,003][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:18:30,001][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:18:30,001][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:18:30,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:18:40,001][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:18:40,002][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:18:40,002][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:18:50,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:18:50,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:18:50,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:19:00,001][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:19:00,001][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:19:00,003][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:19:10,001][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:19:10,001][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:19:10,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:19:20,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:19:20,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:19:20,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:19:30,000][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:19:30,001][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:19:30,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:19:40,002][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:19:40,003][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:19:40,003][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:19:50,001][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:19:50,001][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:19:50,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:20:00,006][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:20:00,007][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:20:00,009][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:20:10,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:20:10,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:20:10,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:20:20,000][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:20:20,001][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:20:20,001][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:20:30,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:20:30,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:20:30,004][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:20:40,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:20:40,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:20:40,005][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:20:50,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:20:50,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:20:50,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:21:00,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:21:00,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:21:00,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:21:10,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:21:10,004][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:21:10,006][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:21:20,004][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:21:20,005][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:21:20,008][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:21:40,169][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:21:40,185][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:21:40,200][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:21:50,018][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:21:50,019][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:21:50,024][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:21:51,489][http-nio-8081-exec-3][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] ==>  Preparing: SELECT h.*, r.id rid, r.`name` rName, r.nameZh rNameZh FROM hr h, role r, hr_role hrr WHERE h.username = ? AND h.id = hrr.hrid AND r.id = hrr.rid
+[2021-04-08 00:21:51,490][http-nio-8081-exec-3][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] ==> Parameters: youke1(String)
+[2021-04-08 00:21:51,494][http-nio-8081-exec-3][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] <==      Total: 1
+[2021-04-08 00:21:51,643][http-nio-8081-exec-4][DEBUG][com.example.dao.MenuDao.getAllMenusWithRole:137] ==>  Preparing: SELECT m.*, r.id rid, r.`name` rName, r.nameZh rNameZh FROM role r LEFT JOIN menu_role mr ON r.id = mr.rid LEFT JOIN menu m ON mr.mid = m.id ORDER BY m.id;
+[2021-04-08 00:21:51,644][http-nio-8081-exec-4][DEBUG][com.example.dao.MenuDao.getAllMenusWithRole:137] ==> Parameters: 
+[2021-04-08 00:21:51,666][http-nio-8081-exec-4][DEBUG][com.example.dao.MenuDao.getAllMenusWithRole:137] <==      Total: 103
+[2021-04-08 00:21:51,674][http-nio-8081-exec-4][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] ==>  Preparing: SELECT DISTINCT m1.*, m.id id1, m.url url1, m.path path1, m.component component1, m.NAME name1, m.iconCls iconCls1, m.keepAlive keepAlive1, m.requireAuth requireAuth1, m.parentId parentId1, m.enabled enabled1 FROM menu m1, menu m LEFT JOIN menu_role mr ON m.id = mr.mid LEFT JOIN hr_role hrr ON mr.rid = hrr.rid WHERE hrr.hrid = ? AND m.enabled = TRUE AND m1.id = m.parentId;
+[2021-04-08 00:21:51,675][http-nio-8081-exec-4][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:21:51,681][http-nio-8081-exec-4][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] <==      Total: 22
+[2021-04-08 00:21:52,032][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:21:52,032][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:21:52,037][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:22:00,002][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:22:00,003][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:22:00,004][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:22:10,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:22:10,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:22:10,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:22:20,001][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:22:20,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:22:20,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:22:30,004][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:22:30,005][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:22:30,008][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:22:35,662][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:22:35,663][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:22:35,672][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:22:40,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:22:40,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:22:40,005][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:22:50,001][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:22:50,001][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:22:50,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:23:00,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:23:00,005][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:23:00,007][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:23:10,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:23:10,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:23:10,004][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:23:20,003][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:23:20,004][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:23:20,005][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:23:30,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:23:30,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:23:30,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:23:40,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:23:40,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:23:40,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:23:50,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:23:50,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:23:50,005][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:24:00,007][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:24:00,008][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:24:00,011][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:24:10,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:24:10,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:24:10,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:24:20,005][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:24:20,006][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:24:20,008][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:24:30,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:24:30,005][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:24:30,009][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:24:40,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:24:40,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:24:40,004][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:24:50,001][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:24:50,002][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:24:50,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:25:00,005][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:25:00,006][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:25:00,008][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:25:10,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:25:10,004][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:25:10,006][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:25:20,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:25:20,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:25:20,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:25:30,001][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:25:30,001][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:25:30,002][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:25:40,003][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:25:40,004][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:25:40,006][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:25:50,006][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:25:50,006][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:25:50,006][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:26:00,004][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:26:00,005][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:26:00,006][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:26:10,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:26:10,004][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:26:10,005][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:26:20,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:26:20,004][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:26:20,007][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:26:30,004][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:26:30,004][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:26:30,005][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:26:40,001][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:26:40,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:26:40,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:26:50,001][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:26:50,001][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:26:50,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:27:00,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:27:00,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:27:00,005][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:27:10,004][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:27:10,005][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:27:10,009][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:27:20,005][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:27:20,007][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:27:20,010][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:27:20,851][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:27:20,851][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:27:20,856][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:27:30,005][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:27:30,006][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:27:30,008][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:27:40,005][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:27:40,007][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:27:40,010][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:27:50,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:27:50,005][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:27:50,009][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:28:00,005][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:28:00,006][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:28:00,007][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:28:10,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:28:10,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:28:10,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:28:20,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:28:20,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:28:20,004][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:28:30,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:28:30,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:28:30,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:28:40,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:28:40,002][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:28:40,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:28:50,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:28:50,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:28:50,004][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:28:50,242][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:28:50,242][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:28:50,245][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:29:00,006][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:29:00,010][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:29:00,014][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:29:07,441][http-nio-8081-exec-1][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:29:07,441][http-nio-8081-exec-1][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:29:07,444][http-nio-8081-exec-1][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:29:10,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:29:10,004][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:29:10,006][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:29:20,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:29:20,121][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:29:20,125][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:29:30,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:29:30,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:29:30,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:29:33,828][http-nio-8081-exec-9][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:29:33,829][http-nio-8081-exec-9][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:29:33,832][http-nio-8081-exec-9][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:29:38,192][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET name = ?, phone = ?, telephone = ?, address = ?, userface = ? where id = ?
+[2021-04-08 00:29:38,192][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: 游客1(String), 18568123489(String), 029-82123434(String), 海口美兰1(String), blob:http://localhost:8080/b7613e6a-985e-44d9-84f1-bd3cab782716(String), 26(Integer)
+[2021-04-08 00:29:38,359][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:29:40,001][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:29:40,001][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:29:40,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:29:42,008][http-nio-8081-exec-9][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:29:42,008][http-nio-8081-exec-9][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:29:42,012][http-nio-8081-exec-9][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:29:49,703][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET userface = ? where id = ?
+[2021-04-08 00:29:49,704][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: \upload\D:\upload\TCP_IP.jpg(String), 26(Integer)
+[2021-04-08 00:29:49,887][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:29:50,006][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:29:50,009][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:29:50,013][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:30:00,001][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:30:00,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:30:00,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:30:04,154][http-nio-8081-exec-6][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET userface = ? where id = ?
+[2021-04-08 00:30:04,154][http-nio-8081-exec-6][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: \upload\D:\upload\TCP_IP.jpg(String), 26(Integer)
+[2021-04-08 00:30:04,155][http-nio-8081-exec-6][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:30:10,000][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:30:10,001][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:30:10,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:30:20,003][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:30:20,003][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:30:20,005][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:30:20,156][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET userface = ? where id = ?
+[2021-04-08 00:30:20,156][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: \upload\D:\upload\TCP_IP.jpg(String), 26(Integer)
+[2021-04-08 00:30:20,158][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:30:30,006][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:30:30,007][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:30:30,010][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:30:40,001][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:30:40,002][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:30:40,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:30:50,001][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:30:50,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:30:50,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:31:00,002][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:31:00,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:31:00,004][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:31:10,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:31:10,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:31:10,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:31:16,032][http-nio-8081-exec-8][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET name = ?, phone = ?, telephone = ?, address = ?, userface = ? where id = ?
+[2021-04-08 00:31:16,032][http-nio-8081-exec-8][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: 游客1(String), 18568123489(String), 029-82123434(String), 海口美兰1(String), blob:http://localhost:8080/585eef0f-c951-4637-9906-50f4acd8a466(String), 26(Integer)
+[2021-04-08 00:31:16,209][http-nio-8081-exec-8][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:31:19,778][http-nio-8081-exec-10][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:31:19,779][http-nio-8081-exec-10][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:31:19,783][http-nio-8081-exec-10][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:31:20,001][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:31:20,001][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:31:20,002][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:31:23,971][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:31:23,972][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:31:23,974][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:31:30,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:31:30,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:31:30,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:31:35,100][http-nio-8081-exec-3][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET userface = ? where id = ?
+[2021-04-08 00:31:35,100][http-nio-8081-exec-3][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: \upload\D:\upload\TCP_IP.jpg(String), 26(Integer)
+[2021-04-08 00:31:35,270][http-nio-8081-exec-3][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:31:40,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:31:40,004][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:31:40,005][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:31:46,211][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:31:46,211][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:31:46,213][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:31:50,000][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:31:50,001][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:31:50,001][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:31:50,495][http-nio-8081-exec-1][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET userface = ? where id = ?
+[2021-04-08 00:31:50,495][http-nio-8081-exec-1][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: \upload\D:\upload\TCP_IP.jpg(String), 26(Integer)
+[2021-04-08 00:31:50,496][http-nio-8081-exec-1][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:32:00,002][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:32:00,003][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:32:00,004][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:32:04,223][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] ==>  Preparing: SELECT h.*, r.id rid, r.`name` rName, r.nameZh rNameZh FROM hr h, role r, hr_role hrr WHERE h.username = ? AND h.id = hrr.hrid AND r.id = hrr.rid
+[2021-04-08 00:32:04,223][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] ==> Parameters: youke1(String)
+[2021-04-08 00:32:04,224][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] <==      Total: 1
+[2021-04-08 00:32:04,474][http-nio-8081-exec-6][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] ==>  Preparing: SELECT DISTINCT m1.*, m.id id1, m.url url1, m.path path1, m.component component1, m.NAME name1, m.iconCls iconCls1, m.keepAlive keepAlive1, m.requireAuth requireAuth1, m.parentId parentId1, m.enabled enabled1 FROM menu m1, menu m LEFT JOIN menu_role mr ON m.id = mr.mid LEFT JOIN hr_role hrr ON mr.rid = hrr.rid WHERE hrr.hrid = ? AND m.enabled = TRUE AND m1.id = m.parentId;
+[2021-04-08 00:32:04,475][http-nio-8081-exec-6][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:32:04,478][http-nio-8081-exec-6][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] <==      Total: 22
+[2021-04-08 00:32:04,663][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:32:04,663][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:32:04,665][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:32:10,000][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:32:10,000][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:32:10,001][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:32:18,562][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:32:18,563][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:32:18,565][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:32:20,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:32:20,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:32:20,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:32:28,238][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET userface = ? where id = ?
+[2021-04-08 00:32:28,239][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: \upload\D:\upload\TCP_IP.jpg(String), 26(Integer)
+[2021-04-08 00:32:28,240][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:32:30,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:32:30,004][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:32:30,007][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:32:40,000][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:32:40,001][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:32:40,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:32:50,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:32:50,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:32:50,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:33:00,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:33:00,004][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:33:00,005][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:33:09,147][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:33:09,148][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:33:09,151][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:33:10,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:33:10,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:33:10,004][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:33:13,413][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET userface = ? where id = ?
+[2021-04-08 00:33:13,413][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: \upload\D:\upload\TCP_IP.jpg(String), 26(Integer)
+[2021-04-08 00:33:13,415][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:33:20,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:33:20,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:33:20,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:33:23,376][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:33:23,377][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:33:23,379][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:33:26,808][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET userface = ? where id = ?
+[2021-04-08 00:33:26,808][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: \upload\D:\upload\TCP_IP.jpg(String), 26(Integer)
+[2021-04-08 00:33:26,809][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:33:30,001][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:33:30,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:33:30,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:33:40,002][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:33:40,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:33:40,006][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:33:50,004][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:33:50,005][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:33:50,008][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:34:00,014][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:34:00,057][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:34:00,059][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:34:10,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:34:10,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:34:10,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:34:20,001][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:34:20,002][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:34:20,002][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:34:30,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:34:30,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:34:30,003][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:34:40,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:34:40,004][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:34:40,005][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:34:49,221][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET userface = ? where id = ?
+[2021-04-08 00:34:49,222][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: \upload\D:\upload\TCP_IP.jpg(String), 26(Integer)
+[2021-04-08 00:34:49,223][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:34:50,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:34:50,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:34:50,004][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:35:00,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:35:00,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:35:00,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:35:10,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:35:10,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:35:10,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:35:10,518][http-nio-8081-exec-8][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:35:10,518][http-nio-8081-exec-8][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:35:10,520][http-nio-8081-exec-8][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:35:20,003][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:35:20,004][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:35:20,007][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:35:30,001][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:35:30,001][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:35:30,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:35:40,002][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:35:40,003][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:35:40,004][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:35:50,002][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:35:50,003][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:35:50,004][MessageBroker-3][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:35:56,930][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET name = ?, phone = ?, telephone = ?, address = ?, userface = ? where id = ?
+[2021-04-08 00:35:56,931][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: 游客1(String), 18568123489(String), 029-82123434(String), 海口美兰1(String), blob:http://localhost:8080/7170e8fc-068f-44f8-be62-fa05ea2e1f87(String), 26(Integer)
+[2021-04-08 00:35:57,098][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:36:00,004][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:36:00,005][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:36:00,009][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:36:10,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:36:10,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:36:10,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:36:20,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:36:20,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:36:20,004][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:36:30,002][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:36:30,002][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:36:30,003][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:36:40,003][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:36:40,003][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:36:40,004][MessageBroker-8][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:36:44,325][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:36:44,326][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:36:44,327][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:36:48,356][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET userface = ? where id = ?
+[2021-04-08 00:36:48,356][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: \upload\D:\upload\TCP_IP.jpg(String), 26(Integer)
+[2021-04-08 00:36:48,543][http-nio-8081-exec-2][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:36:50,005][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:36:50,006][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:36:50,008][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:37:00,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:37:00,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:37:00,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:37:00,943][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.updateInfo:137] ==>  Preparing: update vhr.hr SET name = ?, phone = ?, telephone = ?, address = ?, userface = ? where id = ?
+[2021-04-08 00:37:00,943][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.updateInfo:137] ==> Parameters: 游客1(String), 18568123489(String), 029-82123434(String), 海口美兰1(String), \upload\D:\upload\TCP_IP.jpg(String), 26(Integer)
+[2021-04-08 00:37:00,945][http-nio-8081-exec-4][DEBUG][com.example.dao.HrDao.updateInfo:137] <==    Updates: 1
+[2021-04-08 00:37:08,134][http-nio-8081-exec-8][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:37:08,135][http-nio-8081-exec-8][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:37:08,137][http-nio-8081-exec-8][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:37:10,000][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:37:10,000][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:37:10,001][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:37:14,714][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:37:14,715][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:37:14,717][http-nio-8081-exec-7][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:37:19,114][http-nio-8081-exec-6][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:37:19,114][http-nio-8081-exec-6][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:37:19,117][http-nio-8081-exec-6][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:37:20,004][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:37:20,005][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:37:20,006][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:37:25,471][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:37:25,471][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 26(Integer)
+[2021-04-08 00:37:25,473][http-nio-8081-exec-5][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:37:30,001][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:37:30,001][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:37:30,002][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:37:40,002][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:37:40,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:37:40,005][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:37:50,001][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:37:50,002][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:37:50,003][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:38:00,002][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:38:00,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:38:00,003][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:38:10,004][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:38:10,005][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:38:10,008][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:38:20,005][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:38:20,006][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:38:20,008][MessageBroker-7][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:38:29,395][http-nio-8081-exec-10][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] ==>  Preparing: SELECT h.*, r.id rid, r.`name` rName, r.nameZh rNameZh FROM hr h, role r, hr_role hrr WHERE h.username = ? AND h.id = hrr.hrid AND r.id = hrr.rid
+[2021-04-08 00:38:29,395][http-nio-8081-exec-10][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] ==> Parameters: admin(String)
+[2021-04-08 00:38:29,396][http-nio-8081-exec-10][DEBUG][com.example.dao.HrDao.loadUserByUsername:137] <==      Total: 1
+[2021-04-08 00:38:29,496][http-nio-8081-exec-1][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] ==>  Preparing: SELECT DISTINCT m1.*, m.id id1, m.url url1, m.path path1, m.component component1, m.NAME name1, m.iconCls iconCls1, m.keepAlive keepAlive1, m.requireAuth requireAuth1, m.parentId parentId1, m.enabled enabled1 FROM menu m1, menu m LEFT JOIN menu_role mr ON m.id = mr.mid LEFT JOIN hr_role hrr ON mr.rid = hrr.rid WHERE hrr.hrid = ? AND m.enabled = TRUE AND m1.id = m.parentId;
+[2021-04-08 00:38:29,497][http-nio-8081-exec-1][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] ==> Parameters: 3(Integer)
+[2021-04-08 00:38:29,499][http-nio-8081-exec-1][DEBUG][com.example.dao.MenuDao.getMenusByHrId:137] <==      Total: 21
+[2021-04-08 00:38:29,547][http-nio-8081-exec-3][DEBUG][com.example.dao.HrDao.getAllHr:137] ==>  Preparing: SELECT h.id, h.NAME, h.phone, h.telephone, h.address, h.enabled, h.username, h.userface, h.remark, r.id rid, r.NAME rName, r.nameZh rNameZh FROM hr h LEFT JOIN hr_role hrr ON h.id = hrr.hrid LEFT JOIN role r ON hrr.rid = r.id where h.id != ? ORDER BY h.id
+[2021-04-08 00:38:29,547][http-nio-8081-exec-3][DEBUG][com.example.dao.HrDao.getAllHr:137] ==> Parameters: 3(Integer)
+[2021-04-08 00:38:29,549][http-nio-8081-exec-3][DEBUG][com.example.dao.HrDao.getAllHr:137] <==      Total: 17
+[2021-04-08 00:38:30,006][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:38:30,008][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:38:30,011][MessageBroker-6][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:38:40,003][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:38:40,004][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:38:40,007][MessageBroker-5][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:38:50,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:38:50,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:38:50,002][MessageBroker-2][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:39:00,005][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:39:00,005][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:39:00,007][MessageBroker-1][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0
+[2021-04-08 00:39:10,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==>  Preparing: select msgId, empId, status, routeKey, exchange, count, tryTime, createTime, updateTime from vhr.mail_send_log WHERE status = ? and tryTime < sysdate()
+[2021-04-08 00:39:10,003][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] ==> Parameters: 0(Integer)
+[2021-04-08 00:39:10,004][MessageBroker-4][DEBUG][com.example.dao.MailSendLogDao.queryAllByStatusAndTryTimeLtSysdate:137] <==      Total: 0

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <label>test:</label> <input type="checkbox" value="test" v-model="checked"/>
+    <label>first:</label> <input type="checkbox" value="first" v-model="items"/>
+    <label>second:</label> <input type="checkbox" value="second" v-model="items"/>
+    items: {{items}}
+    <br/>
+    checked:{{checked}}
+    <br/>
+    <input type="radio" id="one" value="One" v-model="picked">
+    <label>One</label>
+    <br>
+    <input type="radio" id="two" value="two" v-model="picked">
+    <label>two</label>
+    <br>
+    <span>Picked: {{ picked }}</span>
+    <br/>
+    <select v-model="selected">
+        <option disabled>请选择</option>
+        <option>1</option>
+        <option>12</option>
+        <option>13</option>
+    </select>
+    {{selected}}
+    <br/>
+    <select multiple v-model="selected1">
+        <option disabled>请选择</option>
+        <option>1</option>
+        <option>12</option>
+        <option>13</option>
+    </select>
+    {{selected1}}
+    <p/>
+    dynamic:{{dynamic}}
+    <input type="radio" id="two1" v-model="dynamic" :value="dynamicValue">
+
+
+    <input
+            type="checkbox"
+            v-model="toggle"
+            true-value="yes"
+            false-value="no"
+    >
+    <p/>
+    lazy:
+    <input
+            type="text"
+            v-model.lazy="toggle"
+            true-value="yes"
+            false-value="no"
+    >
+    toggle:{{toggle}}
+</div>
+<script>
+    var vue = new Vue({
+        el: '#app',
+        data: {
+            items: [],
+            checked: "",
+            picked: "",
+            selected: '',
+            selected1: [],
+            dynamicValue: '',
+            dynamic: '',
+            toggle: '',
+        }
+    })
+</script>
+</body>
+</html>

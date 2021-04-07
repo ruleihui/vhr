@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <table border="1">
+        <!--in-->
+        <tr v-for="(i,index) in 9">
+            <td>{{parent}}{{index+1}}</td>
+            <!--of-->
+            <td v-for="j of i">
+                {{i}}*{{j}}={{i*j}}
+            </td>
+        </tr>
+        <tr v-for="(property,name,index) in object">
+            <td v-text="index"/>
+            <td v-text="name"/>
+            <td v-text="property"/>
+        </tr>
+    </table>
+    <ul>
+        <li v-for="num in nums" :key="num">
+            <input type="checkbox">{{num}}
+            <input :value="num">
+        </li>
+    </ul>
+    <ul>
+        <form>
+            <input type="text" placeholder="test"/>
+        </form>
+    </ul>
+    <input type="text" v-model="value"/>
+    <button @click="add">新增</button>
+</div>
+<script>
+    var vue = new Vue({
+        el: '#app',
+        data: {
+            parent: "parent_",
+            object: {
+                name: 'test',
+                password: '123456',
+                signupTime: new Date().toLocaleDateString()
+            },
+            value: "",
+            nums: ['张三', '李四', '王五', 4],
+        },
+        methods: {
+            add: function () {
+                if (this.value) {
+                    this.nums.unshift(this.value)
+                    this.value = ''
+                } else alert("请输入一个值")
+            }
+        }
+    })
+</script>
+</body>
+</html>

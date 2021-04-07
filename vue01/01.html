@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style type="text/css">
+        /*https://cn.vuejs.org/v2/guide/transitions.html#%E8%BF%87%E6%B8%A1%E7%9A%84%E7%B1%BB%E5%90%8D*/
+        /*开始enter过度的属性值和leave结束过度时的属性值*/
+        .fade-enter, .fade-leave-to {
+            opacity: 0;
+        }
+
+        /*过度期间过度的值
+        这里定义transition: opacity 5.0s ease;表示过度期间改变 不透明属性,用时5s,通过缓慢移动来过度
+        从透明到不透明,从不透明到透明*/
+        .fade-enter-active, .fade-leave-active {
+            /*transitionProperty、 transitionDuration、 transitionTimingFunction 和 transitionDelay.*/
+            transition: opacity 5.0s ease;
+        }
+
+        /*enter过度结束时的目标属性值,leave过度开始时的初始属性值
+
+        也就是.enter的时候,从opacity: 0;透明 .fade-enter-active 花费5s,
+        .fade-enter-to 过度到1%透明*/
+
+        /*.enter 定义开始值x
+          .enter-active 定义期间行为y
+          .enter-to  定义结束值d
+          从x值开始,经过y行为到结束值d
+        */
+        .fade-enter-to, .fade-leave {
+            opacity: 1%;
+        }
+    </style>
+</head>
+<body>
+<!--注意我们不再和 HTML 直接交互了。
+一个 Vue 应用会将其挂载到一个 DOM 元素上 (对于这个例子是 #app) 然后对其进行完全控制
+。那个 HTML 是我们的入口，但其余都会发生在新创建的 Vue 实例内部。-->
+<div>test:{{message}}</div>
+<div id="app">
+    <p> {{message}} <span v-bind:title="date">时间</span></p>
+    <p v-if="condition">">>>这是ture"</p>
+    <p v-if="!condition">">>>这是false"</p>
+    <transition name="fade" appear>
+        <span v-if="condition" v-text="condition"></span>
+    </transition>
+    <input type="button" v-on:click="condition=!condition" value="change">
+</div>
+<script>
+    var vue = new Vue({
+        /*指定html元素作为入口,作为这个Vue的挂载对象*/
+        el: '#app',
+        data: {
+            message: 'hello vue',
+            date: new Date().toLocaleTimeString(),
+            condition: true
+        }
+    })
+</script>
+</body>
+</html>

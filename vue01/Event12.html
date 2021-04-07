@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    {{count}}
+    <button v-on:click="count++">increment</button>
+    <ul>
+        <li v-for="item in 3">
+            <button v-on:click="show(item,$event)">show</button>
+        </li>
+    </ul>
+    <input @keyup.enter="log" type="text" placeholder="keyup.enter"/>
+    <input @click.ctrl="log" type="text" placeholder="click.ctrl"/>
+    <input @keydown.ctrl.67="copy" @keydown.ctrl.86="paste" type="text" placeholder="ctrl+c And ctrl+v"/>
+    <button v-on:click.ctrl="console">A</button>
+    <button v-on:click.ctrl.exact="console">B</button>
+</div>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            count: 0
+        },
+        methods: {
+            show: function (num, event) {
+                alert("num:" + num + "element:" + event.target.tagName)
+            },
+            log: function (event) {
+                console.log(event)
+                console.log(event.target.value);
+            },
+            copy: function (event) {
+                navigator.clipboard.writeText(event.target.value);
+            },
+            paste: function (event) {
+                navigator.clipboard.readText().then(clipText => {
+                    console.log(clipText)
+                });
+            },
+            console: function (event) {
+                console.log(event.target.innerText)
+            }
+        }
+    })
+</script>
+</body>
+</html>

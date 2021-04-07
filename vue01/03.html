@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <p>{{message}}</p>
+    <button v-on:click="reverseMessage">
+        reverseMessage
+    </button>
+    <!--"v-model"新增一个通道,进行双向绑定,使得原本只能通过改变数据来改变DOM(文本,attribute,结构
+    )的变量
+    ,可以通过表单输入(DOM改变)来改变变量-->
+    <input v-model="message">
+</div>
+</body>
+<script>
+    var vue = new Vue({
+        /*不能挂载到html/body上,因为所有的挂载元素会被 Vue 生成的 DOM 替换
+        * html或者body中会存在<script><style> */
+        el: '#app',
+        data: {
+            message: "message"
+        },
+        methods: {
+            reverseMessage: function () {
+                this.message = this.message.split('').reverse().join('')
+            }
+        }
+    })
+</script>
+</html>

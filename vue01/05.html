@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <input @click="get($event)">
+    <p>{{result}}</p>
+</div>
+<script>
+    var data = {
+        a: 1,
+        b: "b",
+        result: '',
+    }
+    // Object.freeze(data)
+    var vue = new Vue({
+        beforeCreate: function () {
+            data.x = 90
+        },
+        el: '#app',
+        data: data,
+        methods: {
+            get: function (x) {
+                this.result = this[x.target.value];
+            }
+        }
+    })
+    data.a = 20;
+    console.log("a:", data.a === vue.a);
+    console.log("b:", data.b === vue.b);
+    console.log("$el and getElementById", vue.$el === document.getElementById("app"))
+</script>
+</body>
+</html>

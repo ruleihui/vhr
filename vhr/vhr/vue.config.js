@@ -1,0 +1,24 @@
+let proxyObj={};
+proxyObj['/ws']={
+    ws:true,
+    target:'ws://localhost:8081',
+}
+proxyObj['/']={
+    ws:false,
+    target:'http://localhost:8081',
+    changeOrigin:true,
+    //(只处理根目录下的代理,只处理/a,访问/a/b不处理)?
+    //没登录的情况下,访问其它页面,出现跨域问题,因为服务端直接返回302重定向
+    //游览器通过location直接访问,不经过node代理
+    pathRewrite:{
+        '^/':''
+    }
+}
+//想让配置生效,最好重启一次页面,已避免缓存
+module.exports={
+    devServer:{
+        host:'localhost',
+        port:'8080',
+        proxy:proxyObj
+    }
+}

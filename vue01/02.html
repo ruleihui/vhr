@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--"v-if"和"v-show",if会根据boolean值删除或条件元素,show则通过style的display:none;来设置消失
+        频繁操作通过show会好一些-->
+    <p v-if="item%2!=0" v-for="item in items">
+        {{item}}
+    </p>
+    <!--99乘法表-->
+    <table>
+        <tr v-for="i in num">
+            <td v-for="j in num">
+                <span v-if="j<=i" style="color: gray">{{i}}*{{j}}={{i * j}}</span>
+                <span v-else style="color: blue">{{i}}*{{j}}={{i * j}}</span>
+            </td>
+        </tr>
+    </table>
+</div>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            items: [1, 2, 3, 4, 5, 6],
+            num: 9
+        }
+    })
+</script>
+</body>
+</html>

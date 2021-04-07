@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.MenuDao">
+
+    <resultMap id="BaseResultMap" type="com.example.entity.Menu">
+        <!--@Table menu-->
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="url" column="url" jdbcType="VARCHAR"/>
+        <result property="path" column="path" jdbcType="VARCHAR"/>
+        <result property="component" column="component" jdbcType="VARCHAR"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="iconCls" column="iconCls" jdbcType="VARCHAR"/>
+        <result property="parentId" column="parentId" jdbcType="INTEGER"/>
+        <result property="enabled" column="enabled" jdbcType="BOOLEAN"/>
+        <association property="meta" javaType="com.example.entity.Meta">
+            <result property="keepAlive" column="keepAlive" jdbcType="BOOLEAN"/>
+            <result property="requireAuth" column="requireAuth" jdbcType="BOOLEAN"/>
+        </association>
+    </resultMap>
+
+    <resultMap id="Menus" type="com.example.entity.Menu" extends="BaseResultMap">
+        <collection property="children" ofType="com.example.entity.Menu">
+            <id property="id" column="id1" jdbcType="INTEGER"/>
+            <result property="url" column="url1" jdbcType="VARCHAR"/>
+            <result property="path" column="path1" jdbcType="VARCHAR"/>
+            <result property="component" column="component1" jdbcType="VARCHAR"/>
+            <result property="name" column="name1" jdbcType="VARCHAR"/>
+            <result property="iconCls" column="iconCls1" jdbcType="VARCHAR"/>
+            <result property="parentId" column="parentId1" jdbcType="INTEGER"/>
+            <result property="enabled" column="enabled1" jdbcType="BOOLEAN"/>
+            <association property="meta" javaType="com.example.entity.Meta">
+                <result property="keepAlive" column="keepAlive1" jdbcType="BOOLEAN"/>
+                <result property="requireAuth" column="requireAuth1" jdbcType="BOOLEAN"/>
+            </association>
+        </collection>
+    </resultMap>
+
+    <resultMap id="MenuWithRole" type="com.example.entity.Menu" extends="BaseResultMap">
+        <collection property="roles" ofType="com.example.entity.Role">
+            <id column="rid" property="id"/>
+            <result column="rName" property="name"/>
+            <result column="rNameZh" property="nameZh"/>
+        </collection>
+    </resultMap>
+    <resultMap id="MenuAndChild" type="com.example.entity.Menu">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <collection property="children" ofType="com.example.entity.Menu">
+            <result property="id" column="m1Id" jdbcType="INTEGER"/>
+            <result property="name" column="m1Name" jdbcType="VARCHAR"/>
+            <collection property="children" ofType="com.example.entity.Menu">
+                <result property="id" column="m2Id" jdbcType="INTEGER"/>
+                <result property="name" column="m2Name" jdbcType="VARCHAR"/>
+            </collection>
+        </collection>
+    </resultMap>
+    <select id="getMenusByRoleId" resultType="java.lang.Integer">
+        select mid
+        from menu_role
+        where rid = #{rid}
+    </select>
+    <delete id="deleteMenusById">
+        delete
+        from menu_role
+        where rid = #{rid}
+    </delete>
+    <insert id="insertRelevanceByRoleId" >
+        insert into menu_role(mid,rid) values
+        <foreach collection="ids" item="mid"  separator="," >
+            (#{mid},#{rid})
+        </foreach>
+    </insert>
+    <select id="queryMenuAndChild" resultMap="MenuAndChild">
+        SELECT m.id    id,
+               m.NAME  NAME,
+               m1.id   m1Id,
+               m1.NAME m1Name,
+               m2.id   m2Id,
+               m2.NAME m2Name
+        FROM menu m
+                 LEFT JOIN menu m1 ON m.id = m1.parentId
+                 LEFT JOIN menu m2 ON m1.id = m2.parentId
+        WHERE m.id = 1
+          and m2.enabled = true
+        ORDER BY m1Id, m2Id
+    </select>
+
+    <select id="getMenusByHrId" resultMap="Menus">
+        SELECT DISTINCT m1.*,
+                        m.id          id1,
+                        m.url         url1,
+                        m.path        path1,
+                        m.component   component1,
+                        m.NAME        name1,
+                        m.iconCls     iconCls1,
+                        m.keepAlive   keepAlive1,
+                        m.requireAuth requireAuth1,
+                        m.parentId    parentId1,
+                        m.enabled     enabled1
+        FROM menu m1,
+             menu m
+                 LEFT JOIN menu_role mr ON m.id = mr.mid
+                 LEFT JOIN hr_role hrr ON mr.rid = hrr.rid
+        WHERE hrr.hrid = #{id}
+          AND m.enabled = TRUE
+          AND m1.id = m.parentId;
+    </select>
+
+    <select id="getAllMenusWithRole" resultMap="MenuWithRole">
+        SELECT m.*,
+               r.id     rid,
+               r.`name` rName,
+               r.nameZh rNameZh
+        FROM role r
+                 LEFT JOIN menu_role mr ON r.id = mr.rid
+                 LEFT JOIN menu m ON mr.mid = m.id
+        ORDER BY m.id;
+    </select>
+
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select id,
+               url,
+               path,
+               component,
+               name,
+               iconCls,
+               keepAlive,
+               requireAuth,
+               parentId,
+               enabled
+        from vhr.menu
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select id,
+               url,
+               path,
+               component,
+               name,
+               iconCls,
+               keepAlive,
+               requireAuth,
+               parentId,
+               enabled
+        from vhr.menu limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+        id, url, path, component, name, iconCls, keepAlive, requireAuth, parentId, enabled
+        from vhr.menu
+        <where>
+            <if test="id != null">
+                id = #{id}
+            </if>
+            <if test="url != null and url != ''">
+                and url = #{url}
+            </if>
+            <if test="path != null and path != ''">
+                and path = #{path}
+            </if>
+            <if test="component != null and component != ''">
+                and component = #{component}
+            </if>
+            <if test="name != null and name != ''">
+                and name = #{name}
+            </if>
+            <if test="iconCls != null and iconCls != ''">
+                and iconCls = #{iconCls}
+            </if>
+            <if test="keepAlive != null">
+                and keepAlive = #{keepAlive}
+            </if>
+            <if test="requireAuth != null">
+                and requireAuth = #{requireAuth}
+            </if>
+            <if test="parentId != null">
+                and parentId = #{parentId}
+            </if>
+            <if test="enabled != null">
+                and enabled = #{enabled}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into vhr.menu(url, path, component, name, iconCls, keepAlive, requireAuth, parentId, enabled)
+        values (#{url}, #{path}, #{component}, #{name}, #{iconCls}, #{keepAlive}, #{requireAuth}, #{parentId},
+                #{enabled})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update vhr.menu
+        <set>
+            <if test="url != null and url != ''">
+                url = #{url},
+            </if>
+            <if test="path != null and path != ''">
+                path = #{path},
+            </if>
+            <if test="component != null and component != ''">
+                component = #{component},
+            </if>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="iconCls != null and iconCls != ''">
+                iconCls = #{iconCls},
+            </if>
+            <if test="keepAlive != null">
+                keepAlive = #{keepAlive},
+            </if>
+            <if test="requireAuth != null">
+                requireAuth = #{requireAuth},
+            </if>
+            <if test="parentId != null">
+                parentId = #{parentId},
+            </if>
+            <if test="enabled != null">
+                enabled = #{enabled},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete
+        from vhr.menu
+        where id = #{id}
+    </delete>
+
+</mapper>

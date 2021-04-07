@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    {{new Date()}}
+    {{test}}
+    <br/>
+    {{num>99?20:50}}
+    <span v-html="a"></span>
+    <!--
+        // v-bind 绑定属性,简写为:
+        //v-on 绑定事件,简写为@-->
+    <button :disabled="disabled">按钮</button>
+    <button @click="disabled=!disabled">turn</button>
+    <a v-bind:href="url">百度</a>
+</div>
+</body>
+<script>
+    var test = "test111";
+    var vue = new Vue({
+        el: '#app',
+        data: {
+            a: '<h1 style="color: red">hello</h1>',
+            disabled: false,
+            num: 99,
+            //www.baidu.com会访问当前域下的uri
+            //http://localhost:63342/Vhr/vue01/www.baidu.com
+            //https://www.baidu.com,加上协议头后,游览器
+            //才会识别为具体的网站地址url,
+            url: 'https://www.baidu.com'
+        }
+    })
+</script>
+</html>

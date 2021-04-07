@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .fade-enter, .fade-leave-to {
+            opacity: 0;
+        }
+
+        .fade-enter-active, .fade-leave-active {
+            transition: opacity 1s ease;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <p> {{message}} <span v-bind:title="date">时间</span></p>
+    <p v-if="condition==1">">>>if"</p>
+    <p v-else-if="condition==2">">>>else-if"</p>
+    <p v-else>">>>else</p>
+    <transition-group name="fade">
+        <span v-if="condition" v-text="condition" key="span"></span>
+        <template v-if="condition">
+            <p key="1">p1</p>
+            <p key="12">p2</p>
+            <p key="13">p3</p>
+        </template>
+    </transition-group>
+    <template v-if="condition">
+        <label>通过用户名登录</label>
+        <input placeholder="enter your username" key="email"/>
+    </template>
+    <template v-else>
+        <label>通过邮箱登录</label>
+        <input placeholder="enter your email" key="email"/>
+    </template>
+    <transition name="fade" appear>
+        <p v-show="condition">">>>show"</p>
+    </transition>
+    <input type="button" v-on:click="loop" value="increment">
+    <input type="button" v-on:click="condition=!condition" value="turn">
+    <input type="button" v-on:click="condition=!condition" value="change">
+</div>
+<script>
+    var vue = new Vue({
+        /*指定html元素作为入口,作为这个Vue的挂载对象*/
+        el: '#app',
+        data: {
+            message: 'hello vue',
+            date: new Date().toLocaleTimeString(),
+            condition: 1
+        },
+        methods: {
+            loop: function () {
+                if (this.condition < 2)
+                    this.condition++;
+                else this.condition = "0";
+            }
+        }
+    })
+</script>
+</body>
+</html>

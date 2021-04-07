@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <blog-post v-for="(blog,index) in blogs" @test-ok="alert($event)" :test="'test'+index" :blog="blog" :key="blog.id">
+    </blog-post>
+    <!--    <blog-post v-for="(blog,index) in blogs" @test-ok="alert0" :test="'test'+index" :blog="blog" :key="blog.id">-->
+    <!--    </blog-post>-->
+    <custom-input v-model="modelValue"></custom-input>
+    modelValue: {{modelValue}}
+    <p>
+    </p>
+    <custom-div>
+        customDiv
+    </custom-div>
+</div>
+<script>
+    Vue.component('custom-input', {
+        template: `<input type="text"  @input="$emit('input',$event.target.value)" />`
+    })
+    Vue.component('custom-div', {
+        template: `<div>
+                <strong>testDiv</strong>
+                <slot></slot>
+</div>`
+    })
+    Vue.component('blog-post', {
+        props: ['blog', 'test'],
+        //组件汇总data属性不能是对象,只能是函数
+        template: `
+          <div @click="$emit('test-ok','test____')">
+          <h3>{{ test }}----{{ blog.title }}</h3>
+          <h2>test</h2>
+          </div>
+        `
+    })
+    new Vue({
+        el: '#app',
+        data: {
+            blogs: [
+                {id: 1, title: "朝日新闻",},
+                {id: 2, title: "晨时日报",},
+                {id: 3, title: "晚间新闻",}
+            ],
+            modelValue: '',
+        },
+        methods: {
+            alert: function (value) {
+                alert(value)
+            },
+            alert0: function (value) {
+                alert(value)
+            }
+        }
+    })
+</script>
+</body>
+</html>
